@@ -12,8 +12,7 @@ class TasksController < ApplicationController
     @task = Task.new
   end
 
-  def show
-  end
+  def show; end
 
   def create
     @task = Task.create(task_params)
@@ -21,8 +20,7 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
-  def edit
-  end
+  def edit; end
 
   def update
     @task.update(task_params)
@@ -43,5 +41,4 @@ class TasksController < ApplicationController
   def set_task
     @task = Task.find(params[:id])
   end
-
 end
